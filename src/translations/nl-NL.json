@@ -108,8 +108,8 @@
   "device.byname.parameter.alert.cancel": "Annuleer",
   "device.byname.parameter.alert.title": "Parameters",
   "device.byname.parameter.alert.subject": "Stel specifieke parameters in <a class='fas fa-info-circle me-2' target='_blank' href='https://zigbeefordomoticz.github.io/wiki/en-eng/HowTo_Device-parameters'></a>",
-  "device.byname.parameter.popover.title": "TITLE",
-  "device.byname.parameter.popover.text": "text to show",
+  "device.byname.parameter.popover.title": "Device Parameters",
+  "device.byname.parameter.popover.text": "Specify local device configuration parameters. Green means in sync with the device, when Orange the parameters are not yet pushed to the device",
   "device.byname.delete.colum": "Verwijder",
   "device.byname.optimized.popover.title.ok": "Het object is geoptimaliseerd met de plugin",
   "device.byname.optimized.popover.text.ok": "Klik op het icoon om de informatie van het object",
@@ -643,5 +643,7 @@
   "manufacturer.zlinky.PROTOCOL_LINKY_2": "Mode historique triphasé",
   "manufacturer.zlinky.PROTOCOL_LINKY_3": "Mode standard triphasé",
   "manufacturer.zlinky.PROTOCOL_LINKY_5": "Mode standard monophasé producteur",
-  "manufacturer.zlinky.PROTOCOL_LINKY_7": "Mode standard triphasé producteur"
+  "manufacturer.zlinky.PROTOCOL_LINKY_7": "Mode standard triphasé producteur",
+  "ZigpyTopologyReport": "Enable the use of zigpy Topology Scanner",
+  "ZigpyTopologyReportAutoBackup": "Automaticaly backup auto-triggered Topology scan"
 }
