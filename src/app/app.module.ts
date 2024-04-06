@@ -14,7 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { ShellModule } from './shell/shell.module';
-import { HotkeysModule } from '@ngneat/hotkeys';
 
 @NgModule({
   imports: [
@@ -23,7 +22,6 @@ import { HotkeysModule } from '@ngneat/hotkeys';
     HttpClientModule,
     ClipboardModule,
     TranslateModule.forRoot(),
-    HotkeysModule,
     NgbModule,
     CoreModule,
     SharedModule,
