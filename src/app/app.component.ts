@@ -71,13 +71,14 @@ export class AppComponent extends UnsubscribeOnDestroyAdapter implements OnInit,
       this.setTitle();
     });
 
-    this.subs.add(
-      this.hotkeys.addShortcut({ keys: this.keysBoundActive }).subscribe(evt => {
-        console.log('ben' + evt);
-        this.activateRefresh = !this.activateRefresh;
-        this.headerService.setPolling(this.activateRefresh);
-      })
-    );
+    this.keysBoundActive.forEach(key => {
+      this.subs.add(
+        this.hotkeys.addSequenceShortcut({ keys: key }).subscribe(() => {
+          this.activateRefresh = !this.activateRefresh;
+          this.headerService.setPolling(this.activateRefresh);
+        })
+      );
+    });
   }
 
   private setTitle() {
