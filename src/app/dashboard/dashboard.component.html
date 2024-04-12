@@ -197,7 +197,9 @@
     [value]="devicesToOverlay"
     [rows]="10"
     [paginator]="true"
-    [scrollable]="true">
+    [scrollable]="true"
+    stateStorage="local"
+    stateKey="dashboard">
     <ng-template pTemplate="header" let-columns>
       <tr>
         <th style="width: 7rem" pSortableColumn="_NwkId">

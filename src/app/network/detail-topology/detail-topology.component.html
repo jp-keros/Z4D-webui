@@ -58,7 +58,9 @@
                       [value]="relationsSelected"
                       [rows]="10"
                       [paginator]="true"
-                      [scrollable]="true">
+                      [scrollable]="true"
+                      stateStorage="local"
+                      stateKey="topology">
                       <ng-template pTemplate="header" let-columns>
                         <tr>
                           <th pSortableColumn="to">

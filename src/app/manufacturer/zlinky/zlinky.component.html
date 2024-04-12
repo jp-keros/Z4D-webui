@@ -39,7 +39,9 @@
             [value]="deviceSelected.ParametersForDisplay"
             [rows]="10"
             [paginator]="true"
-            [scrollable]="true">
+            [scrollable]="true"
+            stateStorage="local"
+            stateKey="zlinky">
             <ng-template pTemplate="header" let-columns>
               <tr>
                 <th>
